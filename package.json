@@ -2,10 +2,27 @@
   "name": "vuex-type-wrapper",
   "version": "0.1.0",
   "description": "Type-safe wrappers for vuex",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "main": "cjs/vuex-type-wrapper.cjs",
+  "module": "esm/vuex-type-wrapper.mjs",
+  "types": "esm/vuex-type-wrapper.d.ts",
+  "source": "src/vuex-type-wrapper.ts",
+  "files": [
+    "cjs",
+    "es",
+    "src",
+    "READNE.md",
+    "LICENSE"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@types/node": "^17.0.21",
+    "change-case": "^4.1.2",
+    "rollup": "^2.68.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5"
+  },
   "scripts": {
+    "build": "rollup --config rollup.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +40,8 @@
   "bugs": {
     "url": "https://github.com/Segu-g/vuex-type-wrapper/issues"
   },
-  "homepage": "https://github.com/Segu-g/vuex-type-wrapper#readme"
+  "homepage": "https://github.com/Segu-g/vuex-type-wrapper#readme",
+  "dependencies": {
+    "vuex": "^4.0.2"
+  }
 }
