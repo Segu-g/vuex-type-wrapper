@@ -1,0 +1,27 @@
+{
+  "name": "vuex-type-wrapper",
+  "version": "0.1.0",
+  "description": "Type-safe wrappers for vuex",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Segu-g/vuex-type-wrapper.git"
+  },
+  "keywords": [
+    "Vue",
+    "Vuex",
+    "TypeScript",
+    "helper"
+  ],
+  "author": "Segu-g",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Segu-g/vuex-type-wrapper/issues"
+  },
+  "homepage": "https://github.com/Segu-g/vuex-type-wrapper#readme"
+}
