@@ -8,7 +8,7 @@
   "source": "src/vuex-type-wrapper.ts",
   "files": [
     "cjs",
-    "es",
+    "esm",
     "src",
     "READNE.md",
     "LICENSE"
@@ -20,6 +20,9 @@
     "rollup": "^2.68.0",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "vuex": "^4.0.2"
   },
   "scripts": {
     "build": "rollup --config rollup.config.js",
@@ -40,8 +43,5 @@
   "bugs": {
     "url": "https://github.com/Segu-g/vuex-type-wrapper/issues"
   },
-  "homepage": "https://github.com/Segu-g/vuex-type-wrapper#readme",
-  "dependencies": {
-    "vuex": "^4.0.2"
-  }
+  "homepage": "https://github.com/Segu-g/vuex-type-wrapper#readme"
 }
