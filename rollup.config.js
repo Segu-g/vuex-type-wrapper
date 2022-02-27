@@ -24,6 +24,7 @@ module.exports = defineConfig([
             typescript({
                 tsconfig: path.resolve(__dirname, "tsconfig.json"),
                 compilerOptions: {
+                    module: "commonjs",
                     declaration: true,
                     declarationDir: "./",
                     rootDir: path.resolve(__dirname, "src")
