@@ -33,7 +33,7 @@ export const committer = <MT extends MutationTree<never>>(
         if (typeof property !== "string") return undefined;
         const nextNamespace = target.namespace
           ? `${target.namespace}/${property}`
-          : "";
+          : property;
         return committer(nextNamespace);
       },
       apply(target, thisArg, argArray: [Commit, unknown]) {

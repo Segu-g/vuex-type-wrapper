@@ -62,7 +62,7 @@ export const dispatcher = <AT extends ActionTree<never, never>>(
         if (typeof property !== "string") return undefined;
         const nextNamespace = target.namespace
           ? `${target.namespace}/${property}`
-          : "";
+          : property;
         return dispatcher(nextNamespace);
       },
       apply(target, thisArg, argArray: [Dispatch, unknown]) {

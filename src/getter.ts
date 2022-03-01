@@ -35,7 +35,7 @@ export const getterHelper = <GT extends GetterTree<never, never>>(
         if (typeof property !== "string") return undefined;
         const nextNamespace = target.namespace
           ? `${target.namespace}/${property}`
-          : "";
+          : property;
         return getterHelper(nextNamespace);
       },
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
